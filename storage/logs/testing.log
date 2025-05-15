@@ -1,0 +1,122 @@
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: crear estudiante  
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: {"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-15T21:51:50.000000Z","created_at":"2025-05-15T21:51:50.000000Z","id":1} 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test crear estudiante finalizado  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: validación de datos obligatorios  
+[2025-05-15 21:51:50] testing.INFO: ✅ Validación de datos obligatorios verificada con error 422  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: obtener estudiantes  
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"Gladys Greenholt MD","cedula":"8253191974","correo":"rolfson.elza@example.net","paralelo_id":1,"created_at":"2025-05-15T21:51:50.000000Z","updated_at":"2025-05-15T21:51:50.000000Z","paralelo":{"id":1,"nombre":"et","created_at":"2025-05-15T21:51:50.000000Z","updated_at":"2025-05-15T21:51:50.000000Z"}}] 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test obtener estudiantes finalizado  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: actualizar estudiante {"id":1} 
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"Juan Actualizado","cedula":"6771546471","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-15T21:51:50.000000Z","updated_at":"2025-05-15T21:51:50.000000Z"} 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test actualizar estudiante finalizado  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: eliminar estudiante {"id":1} 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test eliminar estudiante finalizado  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: cedula duplicada  
+[2025-05-15 21:51:50] testing.INFO: ✅ Test cedula duplicada verificado con error 422  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: crear paralelo  
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: {"nombre":"A1","updated_at":"2025-05-15T21:51:50.000000Z","created_at":"2025-05-15T21:51:50.000000Z","id":1} 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test crear paralelo finalizado correctamente  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: obtener paralelos  
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"B1","created_at":"2025-05-15T21:51:50.000000Z","updated_at":"2025-05-15T21:51:50.000000Z","estudiantes":[]}] 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test obtener paralelos finalizado correctamente  
+[2025-05-15 21:51:50] testing.INFO: 🧪 Iniciando test: actualizar paralelo {"id":1} 
+[2025-05-15 21:51:50] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-15T21:51:50.000000Z","updated_at":"2025-05-15T21:51:50.000000Z"} 
+[2025-05-15 21:51:50] testing.INFO: ✅ Test actualizar paralelo finalizado  
+[2025-05-15 21:51:51] testing.INFO: 🧪 Iniciando test: eliminar paralelo {"id":1} 
+[2025-05-15 21:51:51] testing.INFO: ✅ Test eliminar paralelo finalizado  
+[2025-05-15 21:59:51] testing.INFO: 🧪 Iniciando test: crear estudiante  
+[2025-05-15 21:59:51] testing.INFO: 📥 Respuesta: {"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-15T21:59:51.000000Z","created_at":"2025-05-15T21:59:51.000000Z","id":1} 
+[2025-05-15 21:59:51] testing.INFO: ✅ Test crear estudiante finalizado  
+[2025-05-15 21:59:51] testing.INFO: 🧪 Iniciando test: validación de datos obligatorios  
+[2025-05-15 21:59:51] testing.INFO: ✅ Validación de datos obligatorios verificada con error 422  
+[2025-05-15 21:59:51] testing.INFO: 🧪 Iniciando test: obtener estudiantes  
+[2025-05-15 21:59:51] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"Cristopher Miller","cedula":"1824473946","correo":"gleason.braulio@example.net","paralelo_id":1,"created_at":"2025-05-15T21:59:51.000000Z","updated_at":"2025-05-15T21:59:51.000000Z","paralelo":{"id":1,"nombre":"molestiae","created_at":"2025-05-15T21:59:51.000000Z","updated_at":"2025-05-15T21:59:51.000000Z"}}] 
+[2025-05-15 21:59:51] testing.INFO: ✅ Test obtener estudiantes finalizado  
+[2025-05-15 21:59:51] testing.INFO: 🧪 Iniciando test: actualizar estudiante {"id":1} 
+[2025-05-15 21:59:51] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"Juan Actualizado","cedula":"5162514200","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-15T21:59:51.000000Z","updated_at":"2025-05-15T21:59:51.000000Z"} 
+[2025-05-15 21:59:51] testing.INFO: ✅ Test actualizar estudiante finalizado  
+[2025-05-15 21:59:51] testing.INFO: 🧪 Iniciando test: eliminar estudiante {"id":1} 
+[2025-05-15 21:59:51] testing.INFO: ✅ Test eliminar estudiante finalizado  
+[2025-05-15 21:59:52] testing.INFO: 🧪 Iniciando test: cedula duplicada  
+[2025-05-15 21:59:52] testing.INFO: ✅ Test cedula duplicada verificado con error 422  
+[2025-05-15 21:59:52] testing.INFO: 🧪 Iniciando test: crear paralelo  
+[2025-05-15 21:59:52] testing.INFO: 📥 Respuesta: {"nombre":"A1","updated_at":"2025-05-15T21:59:52.000000Z","created_at":"2025-05-15T21:59:52.000000Z","id":1} 
+[2025-05-15 21:59:52] testing.INFO: ✅ Test crear paralelo finalizado correctamente  
+[2025-05-15 21:59:52] testing.INFO: 🧪 Iniciando test: obtener paralelos  
+[2025-05-15 21:59:52] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"B1","created_at":"2025-05-15T21:59:52.000000Z","updated_at":"2025-05-15T21:59:52.000000Z","estudiantes":[]}] 
+[2025-05-15 21:59:52] testing.INFO: ✅ Test obtener paralelos finalizado correctamente  
+[2025-05-15 21:59:52] testing.INFO: 🧪 Iniciando test: actualizar paralelo {"id":1} 
+[2025-05-15 21:59:52] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-15T21:59:52.000000Z","updated_at":"2025-05-15T21:59:52.000000Z"} 
+[2025-05-15 21:59:52] testing.INFO: ✅ Test actualizar paralelo finalizado  
+[2025-05-15 21:59:52] testing.INFO: 🧪 Iniciando test: eliminar paralelo {"id":1} 
+[2025-05-15 21:59:52] testing.INFO: ✅ Test eliminar paralelo finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: crear estudiante  
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@store called {"request":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1}} 
+[2025-05-15 22:13:54] testing.INFO: Estudiante created {"estudiante":{"App\\Models\\Estudiante":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-15T22:13:54.000000Z","created_at":"2025-05-15T22:13:54.000000Z","id":1}}} 
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: {"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-15T22:13:54.000000Z","created_at":"2025-05-15T22:13:54.000000Z","id":1} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test crear estudiante finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: validación de datos obligatorios  
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@store called {"request":[]} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Validación de datos obligatorios verificada con error 422  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: obtener estudiantes  
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@index called  
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"Ron Harber","cedula":"9220629276","correo":"leuschke.dayton@example.com","paralelo_id":1,"created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z","paralelo":{"id":1,"nombre":"qui","created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z"}}] 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test obtener estudiantes finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: actualizar estudiante {"id":1} 
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@update called with id: 1 {"request":{"nombre":"Juan Actualizado","cedula":"8925784469","correo":"juan_actualizado@test.com","paralelo_id":1}} 
+[2025-05-15 22:13:54] testing.INFO: Estudiante updated {"estudiante":{"App\\Models\\Estudiante":{"id":1,"nombre":"Juan Actualizado","cedula":"8925784469","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z"}}} 
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"Juan Actualizado","cedula":"8925784469","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z"} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test actualizar estudiante finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: eliminar estudiante {"id":1} 
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@destroy called with id: 1  
+[2025-05-15 22:13:54] testing.INFO: Estudiante with id 1 deleted  
+[2025-05-15 22:13:54] testing.INFO: ✅ Test eliminar estudiante finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: cedula duplicada  
+[2025-05-15 22:13:54] testing.INFO: EstudianteController@store called {"request":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1}} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test cedula duplicada verificado con error 422  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: crear paralelo  
+[2025-05-15 22:13:54] testing.INFO: ParaleloController@store called {"request":{"nombre":"A1"}} 
+[2025-05-15 22:13:54] testing.INFO: Paralelo created {"paralelo":{"App\\Models\\Paralelo":{"nombre":"A1","updated_at":"2025-05-15T22:13:54.000000Z","created_at":"2025-05-15T22:13:54.000000Z","id":1}}} 
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: {"nombre":"A1","updated_at":"2025-05-15T22:13:54.000000Z","created_at":"2025-05-15T22:13:54.000000Z","id":1} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test crear paralelo finalizado correctamente  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: obtener paralelos  
+[2025-05-15 22:13:54] testing.INFO: ParaleloController@index called  
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"B1","created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z","estudiantes":[]}] 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test obtener paralelos finalizado correctamente  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: actualizar paralelo {"id":1} 
+[2025-05-15 22:13:54] testing.INFO: ParaleloController@update called with id: 1 {"request":{"nombre":"C1 Actualizado"}} 
+[2025-05-15 22:13:54] testing.INFO: Paralelo updated {"paralelo":{"App\\Models\\Paralelo":{"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z"}}} 
+[2025-05-15 22:13:54] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-15T22:13:54.000000Z","updated_at":"2025-05-15T22:13:54.000000Z"} 
+[2025-05-15 22:13:54] testing.INFO: ✅ Test actualizar paralelo finalizado  
+[2025-05-15 22:13:54] testing.INFO: 🧪 Iniciando test: eliminar paralelo {"id":1} 
+[2025-05-15 22:13:54] testing.INFO: ParaleloController@destroy called with id: 1  
+[2025-05-15 22:13:54] testing.INFO: Paralelo with id 1 deleted  
+[2025-05-15 22:13:54] testing.INFO: ✅ Test eliminar paralelo finalizado  
+[2025-05-15 22:24:26] local.INFO: ParaleloController@index called  
+[2025-05-15 22:25:37] local.INFO: ParaleloController@store called {"request":{"nombre":"A1"}} 
+[2025-05-15 22:25:37] local.INFO: Paralelo created {"paralelo":{"App\\Models\\Paralelo":{"nombre":"A1","updated_at":"2025-05-15T22:25:37.000000Z","created_at":"2025-05-15T22:25:37.000000Z","id":1}}} 
+[2025-05-15 22:26:49] local.INFO: ParaleloController@index called  
+[2025-05-15 22:28:14] local.INFO: ParaleloController@store called {"request":{"nombre":"A2"}} 
+[2025-05-15 22:28:14] local.INFO: Paralelo created {"paralelo":{"App\\Models\\Paralelo":{"nombre":"A2","updated_at":"2025-05-15T22:28:14.000000Z","created_at":"2025-05-15T22:28:14.000000Z","id":2}}} 
+[2025-05-15 22:28:47] local.INFO: ParaleloController@index called  
+[2025-05-15 22:31:28] local.INFO: ParaleloController@show called with id: 1  
+[2025-05-15 22:33:09] local.INFO: ParaleloController@index called  
+[2025-05-15 22:33:20] local.INFO: ParaleloController@index called  
+[2025-05-15 22:33:50] local.INFO: ParaleloController@update called with id: 1 {"request":{"nombre":"A1 Actualizado"}} 
+[2025-05-15 22:33:51] local.INFO: Paralelo updated {"paralelo":{"App\\Models\\Paralelo":{"id":1,"nombre":"A1 Actualizado","created_at":"2025-05-15T22:25:37.000000Z","updated_at":"2025-05-15T22:33:51.000000Z"}}} 
+[2025-05-15 22:33:55] local.INFO: ParaleloController@index called  
+[2025-05-15 22:34:22] local.INFO: ParaleloController@index called  
+[2025-05-15 22:35:44] local.INFO: ParaleloController@destroy called with id: 2  
+[2025-05-15 22:35:44] local.INFO: Paralelo with id 2 deleted  
+[2025-05-15 22:36:14] local.INFO: ParaleloController@index called  
+[2025-05-15 22:41:24] local.INFO: EstudianteController@store called {"request":{"nombre":"Juan Perez","cedula":"1234567890","correo":"juan.perez@example.com","paralelo_id":1}} 
+[2025-05-15 22:41:24] local.INFO: Estudiante created {"estudiante":{"App\\Models\\Estudiante":{"nombre":"Juan Perez","cedula":"1234567890","correo":"juan.perez@example.com","paralelo_id":1,"updated_at":"2025-05-15T22:41:24.000000Z","created_at":"2025-05-15T22:41:24.000000Z","id":1}}} 
+[2025-05-15 22:42:30] local.INFO: EstudianteController@index called  
+[2025-05-15 22:44:00] local.INFO: EstudianteController@show called with id: 1  
+[2025-05-15 22:44:15] local.INFO: EstudianteController@update called with id: 1 {"request":{"nombre":"Juan P. Actualizado","correo":"juan.actualizado@example.com"}} 
+[2025-05-15 22:44:15] local.INFO: Estudiante updated {"estudiante":{"App\\Models\\Estudiante":{"id":1,"nombre":"Juan P. Actualizado","cedula":"1234567890","correo":"juan.actualizado@example.com","paralelo_id":1,"created_at":"2025-05-15T22:41:24.000000Z","updated_at":"2025-05-15T22:44:15.000000Z"}}} 
+[2025-05-15 22:44:52] local.INFO: EstudianteController@index called  
+[2025-05-15 22:47:07] local.INFO: EstudianteController@show called with id: 1  
+[2025-05-15 22:47:17] local.INFO: EstudianteController@destroy called with id: 1  
+[2025-05-15 22:47:17] local.INFO: Estudiante with id 1 deleted  
+[2025-05-15 22:47:46] local.INFO: EstudianteController@index called  
