@@ -120,3 +120,265 @@
 [2025-05-15 22:47:17] local.INFO: EstudianteController@destroy called with id: 1  
 [2025-05-15 22:47:17] local.INFO: Estudiante with id 1 deleted  
 [2025-05-15 22:47:46] local.INFO: EstudianteController@index called  
+[2025-05-16 20:43:02] local.ERROR: ErrorException: Required @OA\PathItem() not found in C:\Users\talas\Desktop\Prueba\apiawa\vendor\zircote\swagger-php\src\Loggers\DefaultLogger.php:23
+Stack trace:
+#0 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 C:\Users\talas\Desktop\Prueba\apiawa\vendor\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error()
+#3 C:\Users\talas\Desktop\Prueba\apiawa\vendor\psr\log\src\LoggerTrait.php(61): OpenApi\Loggers\DefaultLogger->log()
+#4 C:\Users\talas\Desktop\Prueba\apiawa\vendor\zircote\swagger-php\src\Annotations\OpenApi.php(157): Psr\Log\AbstractLogger->warning()
+#5 C:\Users\talas\Desktop\Prueba\apiawa\vendor\zircote\swagger-php\src\Analysis.php(423): OpenApi\Annotations\OpenApi->validate()
+#6 C:\Users\talas\Desktop\Prueba\apiawa\vendor\zircote\swagger-php\src\Generator.php(377): OpenApi\Analysis->validate()
+#7 C:\Users\talas\Desktop\Prueba\apiawa\vendor\darkaonline\l5-swagger\src\Generator.php(177): OpenApi\Generator->generate()
+#8 C:\Users\talas\Desktop\Prueba\apiawa\vendor\darkaonline\l5-swagger\src\Generator.php(118): L5Swagger\Generator->scanFilesForDocumentation()
+#9 C:\Users\talas\Desktop\Prueba\apiawa\vendor\darkaonline\l5-swagger\src\Http\Controllers\SwaggerController.php(53): L5Swagger\Generator->generateDocs()
+#10 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(54): L5Swagger\Http\Controllers\SwaggerController->docs()
+#11 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(43): Illuminate\Routing\Controller->callAction()
+#12 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Route.php(265): Illuminate\Routing\ControllerDispatcher->dispatch()
+#13 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Route.php(211): Illuminate\Routing\Route->runController()
+#14 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Router.php(808): Illuminate\Routing\Route->run()
+#15 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(169): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#16 C:\Users\talas\Desktop\Prueba\apiawa\vendor\darkaonline\l5-swagger\src\Http\Middleware\Config.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#17 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): L5Swagger\Http\Middleware\Config->handle()
+#18 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(126): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#19 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Router.php(807): Illuminate\Pipeline\Pipeline->then()
+#20 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Router.php(786): Illuminate\Routing\Router->runRouteWithinStack()
+#21 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Router.php(750): Illuminate\Routing\Router->runRoute()
+#22 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Routing\Router.php(739): Illuminate\Routing\Router->dispatchToRoute()
+#23 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#24 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(169): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#25 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#27 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#28 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#29 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#30 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#31 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#33 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#34 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#35 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#36 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Http\Middleware\HandleCors->handle()
+#37 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#38 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Http\Middleware\TrustProxies->handle()
+#39 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#40 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#41 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#42 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(208): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#43 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(126): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#44 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#45 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#46 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1219): Illuminate\Foundation\Http\Kernel->handle()
+#47 C:\Users\talas\Desktop\Prueba\apiawa\public\index.php(20): Illuminate\Foundation\Application->handleRequest()
+#48 C:\Users\talas\Desktop\Prueba\apiawa\vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php(23): require_once('...')
+#49 {main}  
+[2025-05-16 20:43:59] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php:23)
+[stacktrace]
+#0 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php(23): trigger_error()
+#3 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\psr\\log\\src\\LoggerTrait.php(61): OpenApi\\Loggers\\DefaultLogger->log()
+#4 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(157): Psr\\Log\\AbstractLogger->warning()
+#5 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Analysis.php(423): OpenApi\\Annotations\\OpenApi->validate()
+#6 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Generator.php(377): OpenApi\\Analysis->validate()
+#7 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(177): OpenApi\\Generator->generate()
+#8 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(118): L5Swagger\\Generator->scanFilesForDocumentation()
+#9 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(73): L5Swagger\\Generator->generateDocs()
+#10 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(56): L5Swagger\\Console\\GenerateDocsCommand->generateDocumentation()
+#11 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): L5Swagger\\Console\\GenerateDocsCommand->handle()
+#12 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#14 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#15 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#16 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#17 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute()
+#18 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#19 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run()
+#20 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#21 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#22 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#23 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle()
+#24 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#25 {main}
+"} 
+[2025-05-16 20:51:33] local.ERROR: Required @OA\Info() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\Info() not found at C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php:23)
+[stacktrace]
+#0 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php(23): trigger_error()
+#3 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\psr\\log\\src\\LoggerTrait.php(61): OpenApi\\Loggers\\DefaultLogger->log()
+#4 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\AbstractAnnotation.php(523): Psr\\Log\\AbstractLogger->warning()
+#5 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(170): OpenApi\\Annotations\\AbstractAnnotation->validate()
+#6 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Analysis.php(423): OpenApi\\Annotations\\OpenApi->validate()
+#7 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Generator.php(377): OpenApi\\Analysis->validate()
+#8 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(177): OpenApi\\Generator->generate()
+#9 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(118): L5Swagger\\Generator->scanFilesForDocumentation()
+#10 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(73): L5Swagger\\Generator->generateDocs()
+#11 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(56): L5Swagger\\Console\\GenerateDocsCommand->generateDocumentation()
+#12 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): L5Swagger\\Console\\GenerateDocsCommand->handle()
+#13 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#15 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#16 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#17 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#18 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute()
+#19 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#20 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run()
+#21 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#22 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#23 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#24 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle()
+#25 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#26 {main}
+"} 
+[2025-05-16 20:53:10] local.ERROR: Required @OA\Info() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\Info() not found at C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php:23)
+[stacktrace]
+#0 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php(23): trigger_error()
+#3 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\psr\\log\\src\\LoggerTrait.php(61): OpenApi\\Loggers\\DefaultLogger->log()
+#4 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\AbstractAnnotation.php(523): Psr\\Log\\AbstractLogger->warning()
+#5 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(170): OpenApi\\Annotations\\AbstractAnnotation->validate()
+#6 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Analysis.php(423): OpenApi\\Annotations\\OpenApi->validate()
+#7 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Generator.php(377): OpenApi\\Analysis->validate()
+#8 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(177): OpenApi\\Generator->generate()
+#9 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(118): L5Swagger\\Generator->scanFilesForDocumentation()
+#10 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(73): L5Swagger\\Generator->generateDocs()
+#11 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(56): L5Swagger\\Console\\GenerateDocsCommand->generateDocumentation()
+#12 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): L5Swagger\\Console\\GenerateDocsCommand->handle()
+#13 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#15 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#16 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#17 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#18 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute()
+#19 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#20 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run()
+#21 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#22 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#23 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#24 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle()
+#25 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#26 {main}
+"} 
+[2025-05-16 20:56:24] local.ERROR: Required @OA\Info() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\Info() not found at C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php:23)
+[stacktrace]
+#0 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php(23): trigger_error()
+#3 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\psr\\log\\src\\LoggerTrait.php(61): OpenApi\\Loggers\\DefaultLogger->log()
+#4 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\AbstractAnnotation.php(523): Psr\\Log\\AbstractLogger->warning()
+#5 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(170): OpenApi\\Annotations\\AbstractAnnotation->validate()
+#6 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Analysis.php(423): OpenApi\\Annotations\\OpenApi->validate()
+#7 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\zircote\\swagger-php\\src\\Generator.php(377): OpenApi\\Analysis->validate()
+#8 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(177): OpenApi\\Generator->generate()
+#9 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(118): L5Swagger\\Generator->scanFilesForDocumentation()
+#10 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(73): L5Swagger\\Generator->generateDocs()
+#11 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(56): L5Swagger\\Console\\GenerateDocsCommand->generateDocumentation()
+#12 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): L5Swagger\\Console\\GenerateDocsCommand->handle()
+#13 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#15 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#16 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#17 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#18 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute()
+#19 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#20 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run()
+#21 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#22 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#23 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#24 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle()
+#25 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#26 {main}
+"} 
+[2025-05-16 21:02:35] local.ERROR: Class "App\Http\Controllers\BaseController" not found {"exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\BaseController\" not found at C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\app\\Http\\Controllers\\Controller.php:20)
+[stacktrace]
+#0 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\composer\\ClassLoader.php(576): include()
+#1 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}()
+#2 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php(10): Composer\\Autoload\\ClassLoader->loadClass()
+#3 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\composer\\ClassLoader.php(576): include('...')
+#4 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}()
+#5 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#6 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(91): method_exists()
+#7 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable()
+#8 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(197): Illuminate\\Routing\\RouteAction::parse()
+#9 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(178): Illuminate\\Routing\\Route->parseAction()
+#10 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(671): Illuminate\\Routing\\Route->__construct()
+#11 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(562): Illuminate\\Routing\\Router->newRoute()
+#12 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(542): Illuminate\\Routing\\Router->createRoute()
+#13 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(160): Illuminate\\Routing\\Router->addRoute()
+#14 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Routing\\Router->get()
+#15 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\routes\\auth.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#16 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\routes\\web.php(9): require('...')
+#17 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(34): require('...')
+#18 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register()
+#19 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes()
+#20 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group()
+#21 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(248): Illuminate\\Routing\\RouteRegistrar->group()
+#22 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#23 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#27 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call()
+#28 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#29 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#30 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#31 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure()
+#32 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#33 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#34 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call()
+#35 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#36 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider()
+#37 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#38 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk()
+#39 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#40 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#41 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith()
+#42 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#43 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle()
+#44 C:\\Users\\talas\\Desktop\\Prueba\\apiawa\\artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#45 {main}
+"} 
+[2025-05-16 21:06:21] testing.INFO: 🧪 Iniciando test: crear estudiante  
+[2025-05-16 21:06:21] testing.INFO: EstudianteController@store called {"request":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1}} 
+[2025-05-16 21:06:21] testing.INFO: Estudiante created {"estudiante":{"App\\Models\\Estudiante":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-16T21:06:21.000000Z","created_at":"2025-05-16T21:06:21.000000Z","id":1}}} 
+[2025-05-16 21:06:21] testing.INFO: 📥 Respuesta: {"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1,"updated_at":"2025-05-16T21:06:21.000000Z","created_at":"2025-05-16T21:06:21.000000Z","id":1} 
+[2025-05-16 21:06:21] testing.INFO: ✅ Test crear estudiante finalizado  
+[2025-05-16 21:06:21] testing.INFO: 🧪 Iniciando test: validación de datos obligatorios  
+[2025-05-16 21:06:21] testing.INFO: EstudianteController@store called {"request":[]} 
+[2025-05-16 21:06:21] testing.INFO: ✅ Validación de datos obligatorios verificada con error 422  
+[2025-05-16 21:06:21] testing.INFO: 🧪 Iniciando test: obtener estudiantes  
+[2025-05-16 21:06:21] testing.INFO: EstudianteController@index called  
+[2025-05-16 21:06:21] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"Golda Steuber","cedula":"8002398886","correo":"ida.kub@example.com","paralelo_id":1,"created_at":"2025-05-16T21:06:21.000000Z","updated_at":"2025-05-16T21:06:21.000000Z","paralelo":{"id":1,"nombre":"nisi","created_at":"2025-05-16T21:06:21.000000Z","updated_at":"2025-05-16T21:06:21.000000Z"}}] 
+[2025-05-16 21:06:21] testing.INFO: ✅ Test obtener estudiantes finalizado  
+[2025-05-16 21:06:21] testing.INFO: 🧪 Iniciando test: actualizar estudiante {"id":1} 
+[2025-05-16 21:06:21] testing.INFO: EstudianteController@update called with id: 1 {"request":{"nombre":"Juan Actualizado","cedula":"3679791659","correo":"juan_actualizado@test.com","paralelo_id":1}} 
+[2025-05-16 21:06:21] testing.INFO: Estudiante updated {"estudiante":{"App\\Models\\Estudiante":{"id":1,"nombre":"Juan Actualizado","cedula":"3679791659","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-16T21:06:21.000000Z","updated_at":"2025-05-16T21:06:21.000000Z"}}} 
+[2025-05-16 21:06:21] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"Juan Actualizado","cedula":"3679791659","correo":"juan_actualizado@test.com","paralelo_id":1,"created_at":"2025-05-16T21:06:21.000000Z","updated_at":"2025-05-16T21:06:21.000000Z"} 
+[2025-05-16 21:06:21] testing.INFO: ✅ Test actualizar estudiante finalizado  
+[2025-05-16 21:06:21] testing.INFO: 🧪 Iniciando test: eliminar estudiante {"id":1} 
+[2025-05-16 21:06:21] testing.INFO: EstudianteController@destroy called with id: 1  
+[2025-05-16 21:06:21] testing.INFO: Estudiante with id 1 deleted  
+[2025-05-16 21:06:22] testing.INFO: ✅ Test eliminar estudiante finalizado  
+[2025-05-16 21:06:22] testing.INFO: 🧪 Iniciando test: cedula duplicada  
+[2025-05-16 21:06:22] testing.INFO: EstudianteController@store called {"request":{"nombre":"Juan","cedula":"1234567890","correo":"juan@test.com","paralelo_id":1}} 
+[2025-05-16 21:06:22] testing.INFO: ✅ Test cedula duplicada verificado con error 422  
+[2025-05-16 21:06:22] testing.INFO: 🧪 Iniciando test: crear paralelo  
+[2025-05-16 21:06:22] testing.INFO: ParaleloController@store called {"request":{"nombre":"A1"}} 
+[2025-05-16 21:06:22] testing.INFO: Paralelo created {"paralelo":{"App\\Models\\Paralelo":{"nombre":"A1","updated_at":"2025-05-16T21:06:22.000000Z","created_at":"2025-05-16T21:06:22.000000Z","id":1}}} 
+[2025-05-16 21:06:22] testing.INFO: 📥 Respuesta: {"nombre":"A1","updated_at":"2025-05-16T21:06:22.000000Z","created_at":"2025-05-16T21:06:22.000000Z","id":1} 
+[2025-05-16 21:06:22] testing.INFO: ✅ Test crear paralelo finalizado correctamente  
+[2025-05-16 21:06:22] testing.INFO: 🧪 Iniciando test: obtener paralelos  
+[2025-05-16 21:06:22] testing.INFO: ParaleloController@index called  
+[2025-05-16 21:06:22] testing.INFO: 📥 Respuesta: [{"id":1,"nombre":"B1","created_at":"2025-05-16T21:06:22.000000Z","updated_at":"2025-05-16T21:06:22.000000Z","estudiantes":[]}] 
+[2025-05-16 21:06:22] testing.INFO: ✅ Test obtener paralelos finalizado correctamente  
+[2025-05-16 21:06:22] testing.INFO: 🧪 Iniciando test: actualizar paralelo {"id":1} 
+[2025-05-16 21:06:22] testing.INFO: ParaleloController@update called with id: 1 {"request":{"nombre":"C1 Actualizado"}} 
+[2025-05-16 21:06:22] testing.INFO: Paralelo updated {"paralelo":{"App\\Models\\Paralelo":{"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-16T21:06:22.000000Z","updated_at":"2025-05-16T21:06:22.000000Z"}}} 
+[2025-05-16 21:06:22] testing.INFO: 📥 Respuesta: {"id":1,"nombre":"C1 Actualizado","created_at":"2025-05-16T21:06:22.000000Z","updated_at":"2025-05-16T21:06:22.000000Z"} 
+[2025-05-16 21:06:22] testing.INFO: ✅ Test actualizar paralelo finalizado  
+[2025-05-16 21:06:22] testing.INFO: 🧪 Iniciando test: eliminar paralelo {"id":1} 
+[2025-05-16 21:06:22] testing.INFO: ParaleloController@destroy called with id: 1  
+[2025-05-16 21:06:22] testing.INFO: Paralelo with id 1 deleted  
+[2025-05-16 21:06:22] testing.INFO: ✅ Test eliminar paralelo finalizado  
